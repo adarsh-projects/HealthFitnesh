@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url("sign.jpg");
+}
+
+/* Full-width input fields */
+#gender,input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/* Set a style for all buttons */
+button {
+  background-color: #00004d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 20px;
+}
+
+a.psw {
+  float: right;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto 15% auto; /* 15% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%;
+}
+</style>
+</head>
+<body>
+
+<form class="modal-content" action="insertData.jsp" method="POST">
+	<div class="imgcontainer">
+	  <img src="avatar.png" class="avatar">
+	</div>
+	<div class="container">
+	  <div style="text-align: center;">
+	      <label for="login"><b>Sign Up</b></label><br></br>
+	  </div>
+	  <label for="username"><b>Username</b></label>
+	  <input type="text" placeholder="Enter Username" name="username" required>
+	  
+	  <label for="email"><b>Email</b></label>
+	  <input type="email" placeholder="Enter E-mail" name="email" required>
+	  
+	  <label for="gender"><b>Gender:</b></label>
+  	  
+  	  <select name="gnd" id="gender">
+	    <option value="male">Male</option>
+	    <option value="femal">Female</option>
+  	  </select>
+	  
+	  <label for="height"><b>Height</b></label>
+	  <input type="text" placeholder="Enter Height" name="hgt" required>
+	  
+	  <label for="weight"><b>Weight</b></label>
+	  <input type="text" placeholder="Enter Weight" name="wgt" required>
+	  
+	  
+	  <label for="psw"><b>Password</b></label>
+	  <input type="password" placeholder="Enter Password" name="password" required>
+	  
+	  <label for="psw"><b> Confirm Password</b></label>
+	  <input type="password" placeholder="Confirm Password" name="confirmpsd" required>
+	  
+	  <button type="submit">Sign Up</button>
+	  <div class="container" style="background-color:#f1f1f1">
+	  	<a class="psw" href="loginPage.html">Already, User?</a>
+	  </div>
+	</div>
+</form>
+
+
+
+</body>
+</html>
